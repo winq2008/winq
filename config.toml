@@ -1,0 +1,29 @@
+theme = "hydee"
+baseURL = "https://winq.gitee.io/"
+languageCode = "zh-CN"
+title = "似水年华 记录流年"
+enableEmoji= true
+[Menus]
+  main = [
+      {Name = "Gitee", URL = "https://gitee.com/winq"},
+  ]
+
+[params]
+  description = "初见乍惊欢 ,久处亦怦然!"
+#  themeColor = "theme-base-0d"
+
+[module]
+[[module.imports]]
+  path = 'github.com/atishay/hugo-debug-utils'
+[[module.mounts]]
+  source = 'debug-bar/template'
+  target = 'layouts/partials/debug'
+[[module.mounts]]
+  source = 'debug-bar/css'
+  target = 'assets/css'
+[[module.mounts]]
+  source = 'debug-bar/js'
+  target = 'assets/js'
+[[module.mounts]]
+  source = 'console'
+  target = 'layouts/partials'
